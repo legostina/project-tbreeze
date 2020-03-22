@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Test Telebreeze</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="page-header">
+    <nav class="main-nav">
+        <div class="main-nav__top top-block">
+            <button class="top-block main-nav__toggle" type="button">
+                <span class="visually-hidden">Закрыть меню</span>
+            </button>
+            <div class="top-block device-selection">
+                <a class="device-selection__mobile"></a>
+                <a class="device-selection__tablet"></a>
+                <a class="device-selection__desktop"></a>
+            </div>
+        </div>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active menu">
+                    <a class="menu__link">Pages</a>
+                    <p class="menu__description">page1.html</p>
+                </li>
+                <li class="site-list__item menu">
+                    <a href="#" class="menu__link">Sites</a>
+                    <p class="menu__description">New Site</p>
+                </li>
+                <li class="site-list__item menu">
+                    <a href="#" class="menu__link">Please, Sign Up</a>
+                </li>
+                <li class="site-list__item menu">
+                    <a href="#" class="menu__link">Extensions</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="page-main">
+    <h1 class="visually-hidden">Тестовая страница Telebreeze</h1>
+    <section class="product">
+        <header class="product__header">
+            <div class="product__container product-info">
+                <h2 class="product-info__title">Drug and drop website builder</h2>
+                <p class="product-info__description">Make you own website in a few clicks! Mobirise helps you cut down development time by providing you with flexible website editor with a drag and drop interface.</p>
+                <a class="product-info__button">learn more</a>
+                <picture>
+                    <source type="image/webp" media="(min-width:960px)" srcset="img/phonehand-desktop@1x.webp 1x, img/phonehand-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width:660px)" srcset="img/phonehand-tablet@1x.webp 1x, img/phonehand-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/phonehand-mobile@1x.webp 1x, img/phonehand-mobile@2x.webp 2x">
+
+                    <source media="(min-width:960px)" srcset="img/phonehand-desktop@1x.png 1x, img/phonehand-desktop@2x.png 2x">
+                    <source media="(min-width:660px)" srcset="img/phonehand-tablet@1x.png 1x, img/phonehand-tablet@2x.png 2x">
+                    <img class="product-info__banner" src="img/phonehand@1x.png" srcset="img/phonehand-mobile@2x.png 2x" alt="Вебсайт на телефоне">
+                </picture>
+            </div>
+        </header>
+    </section>
+</main>
+
+    <script type="text/javascript" src="js/header.min.js"></script>
+</body>
+</html>
