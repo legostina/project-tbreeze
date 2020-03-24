@@ -1,66 +1,10 @@
 {
-  "menu": [
-    {
-      "id": 1,
-      "menu_title": "Main page",
-      "menu_subtitle": "About us",
-      "content": {
-        "header": "Lorem ipsum",
-        "short_text": "Suspendisse fringilla dui nulla, sit amet fermentumnunc consectetur eget.",
-        "full_text": "Lorem ipsum dolor sit amet, consectetur adipiscingelit.",
-        "image_url": "/path/to/image/file.png",
-        "full_text_btn_title": "Learn more"
-      }
-    },
-    {
-      "id": 2,
-      "menu_title": "Shop",
-      "menu_subtitle": "Our products to buy",
-      "content": {
-        "header": "Products",
-        "short_text": "Suspendisse fringilla dui nulla, sit amet fermentumnunc consectetur eget. In vitae nulla a est tristique porttitor.",
-        "full_text": "Lorem ipsum dolor sit amet, consectetur adipiscingelit.",
-        "image_url": "/path/to/image/file2.png",
-        "full_text_btn_title": "Get more products"
-      }
-    },
-    {
-      "id": 3,
-      "menu_title": "Contacts",
-      "menu_subtitle": "Call us",
-      "content": {
-        "header": "Contacts",
-        "short_text": "Phone: 8-800-555-3555 \n Email: some_email@domain.com",
-        "full_text": "",
-        "image_url": "/path/to/image/file3.png",
-        "full_text_btn_title": "Learn more"
-      }
-    },
-    {
-      "id": 4,
-      "menu_title": "Thank you",
-      "menu_subtitle": "",
-      "content": {
-        "header": "Thank you",
-        "short_text": "We will be glad to see you again",
-        "full_text": "Lorem ipsum dolor sit amet, consectetur adipiscingelit.",
-        "image_url": "",
-        "full_text_btn_title": ""
-      }
-    },
-    {
-      "id": 4,
-      "menu_title": "Thank you",
-      "menu_subtitle": "",
-      "content": {}
-    }
-  ],
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "editorconfig": "^0.15.3",
-    "editorconfig-cli": "^0.3.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
@@ -75,6 +19,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "jpegtran": "^1.0.6",
     "less": "^2.7.3",

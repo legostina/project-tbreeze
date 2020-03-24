@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Test Telebreeze</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <header class="page-header">
+      <nav class="main-nav">
+          <div class="main-nav__top top-block">
+              <button class="top-block main-nav__toggle" type="button">
+                  <span class="visually-hidden">Закрыть меню</span>
+              </button>
+              <div class="top-block device">
+                <ul class="device-selection selection-list">
+                  <li class="selection-list item-selection">
+                    <img class="item-selection__mobile" src="img/mobile-icon.png" alt="Мобильная версия">
+                  </li>
+                  <li class="selection-list item-selection">
+                    <img class="item-selection__tablet" src="img/tablet-icon.png" alt="Планшетная версия">
+                  </li>
+                  <li class="selection-list item-selection">
+                    <img class="item-selection__desktop" src="img/desktop-icon.png" alt="Десктопная версия">
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="main-nav__wrapper animated slideInLeft">
+              <ul class="main-nav__list site-list">
+                  <li class="site-list__item site-list__item--active menu" data-id="1" onclick="transfer(1);">
+                      <a class="menu__link">Pages</a>
+                      <p class="menu__description">page1.html</p>
+                  </li>
+                  <li class="site-list__item menu">
+                      <a href="#" class="menu__link" data-id="2" onclick="transfer(2);">Sites</a>
+                      <p class="menu__description">New Site</p>
+                  </li>
+                  <li class="site-list__item menu" data-id="3" onclick="transfer(3);">
+                      <a href="#" class="menu__link">Please, Sign Up</a>
+                  </li>
+                  <li class="site-list__item menu" data-id="4" onclick="transfer(4);">
+                      <a href="#" class="menu__link">Extensions</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+  <main class="page-main">
+      <div class="page-main__background">Фон под шапкой</div>
+      <h1 class="visually-hidden">Тестовая страница Telebreeze</h1>
+      <section class="product">
+          <header class="product__header">
+              <div class="product__banner image-banner">
+                <img class="image-banner__mobile" src="img/phonehand.png" alt="Вебсайт на телефоне">
+              </div>
+              <div class="product__container product-info">
+                <h2 class="product-info__title">Drug and drop website builder</h2>
+                <p class="product-info__description">Make you own website in a few clicks! Mobirise helps you cut down development time by providing you with flexible website editor with a drag and drop interface.</p>
+                <a class="product-info__button" href="#" target="_blank">learn more</a>
+              </div>
+          </header>
+      </section>
+  </main>
+
+    <script type="text/javascript" src="js/header.min.js"></script>
+    <script type="text/javascript" src="js/menu.min.js"></script>
+</body>
+</html>

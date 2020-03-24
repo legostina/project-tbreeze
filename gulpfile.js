@@ -17,8 +17,8 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var htmlmin = require("gulp-htmlmin");
-var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
+var uglify = require("gulp-uglify-es").default;
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
@@ -45,12 +45,20 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("source/img"));
 });
 
+gulp.task("uglify", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(rename("*.min.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "!source/img/icon-*",
     "source/js/**",
+    "source/data/*.json",
     "source/*.ico"
   ],{
     base: "source"

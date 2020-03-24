@@ -1,0 +1,148 @@
+.main-nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  max-width: 960px;
+  height: 45px;
+  margin: 0 auto;
+  background-color: @white;
+}
+
+.main-nav__wrapper {
+  background: @light-blue;
+  width: 238px;
+  height: 844px;
+  border-left: 2px solid @orange;
+
+  @media (min-width: @tablet-width) {
+    height: 699px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: start;
+    height: 466px;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav--closed .main-nav__top {
+  border: none;
+}
+
+.main-nav__toggle {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 24px;
+  float: right;
+  background: @dark-toggle;
+  border-left: 2px solid @orange;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 14px;
+    width: 18px;
+    height: 19px;
+    background: url("../img/menu-cross.svg") no-repeat;
+    background-size: 100%;
+  }
+
+  &:hover::before {
+    background: url("../img/close-menu-btn-copy.svg") no-repeat;
+    background-size: 100%;
+    transition: 0.4s;
+  }
+
+  &:focus::before {
+    background: url("../img/close-menu-btn-copy-2.svg") no-repeat;
+    background-size: 100%;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background: none;
+  border-left: 0;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  width: 25px;
+  height: 13px;
+  background: url("../img/menu-burger.svg") no-repeat;
+  background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    top: 17px;
+  }
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background: url("../img/open-menu-btn-copy-2.svg") no-repeat;
+  background-size: 100%;
+}
+
+.main-nav--closed .main-nav__toggle:focus::before {
+  background: url("../img/open-menu-btn-copy-3.svg") no-repeat;
+  background-size: 100%;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-size: 0;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 18px;
+    height: 19px;
+    background: url("../img/menu-cross.svg") no-repeat;
+    background-size: 100%;
+  }
+
+  &:hover::before {
+    background: url("../img/close-menu-btn-copy.svg") no-repeat;
+    background-size: 100%;
+    transition: 0.4s;
+  }
+
+  &:focus::before {
+    background: url("../img/close-menu-btn-copy-2.svg") no-repeat;
+    background-size: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+.image-banner {
+  width: 100%;
+  float: left;
+
+  @media (min-width: @tablet-width) {
+    align-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
+}
+
+.image-banner__mobile {
+  width: 100%;
+  height: auto;
+  order: 2;
+
+  &:hover {
+    box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.35);
+    transform: translateY(-2%);
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 384px;
+    order: 1;
+  }
+}
